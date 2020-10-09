@@ -5,7 +5,6 @@ import { Expect, Test, TestFixture, MatchError } from "alsatian";
 import { ReactTestingLibraryMatcher, ExpectElement } from "./element-matcher";
 import { configureJSDOM } from "./jsdom-env";
 
-
 configureJSDOM();
 const MyComponent: React.FC = () => (
     <div>
@@ -16,7 +15,7 @@ const MyComponent: React.FC = () => (
 @TestFixture("ElementMatcher")
 export class ElementMatcherTests {
 
-    @Test("should fail if elements not match")
+    @Test("should fail if elements do not match")
     public shouldNotMatchElements() {
 
         const { container } = render(<MyComponent />);
