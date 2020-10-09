@@ -1,0 +1,49 @@
+{
+  "name": "alsatian-react-testing-library",
+  "version": "1.0.0",
+  "description": "Helpers for testing React in TypeScript with React Testing Library and Alsatian",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "tsc -p ./tsconfig.json --outDir dist",
+    "test": "cross-env TS_NODE_PROJECT=tsconfig.test.json alsatian \"./src/**/*.test.ts\" \"./src/**/*.test.tsx\"",
+    "test:ci": "cross-env TS_NODE_PROJECT=tsconfig.test.json alsatian \"./src/**/*.test.ts\" \"./src/**/*.test.tsx\" --tap | tap-xunit > ./test-results.xml",
+    "lint": "tslint -c tslint.json \"./src/**/*.{ts,tsx}\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NewOrbit/alsatian-react-testing-library.git"
+  },
+  "keywords": [
+    "testing",
+    "typescript",
+    "alsatian",
+    "react-testing-library",
+    "react"
+  ],
+  "author": "NewOrbit Ltd",
+  "license": "MIT",
+  "peerDependencies": {
+    "alsatian": "3.x",
+    "@testing-library/react": "11.x",
+    "jsdom": "^16.4.0"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^11.0.4",
+    "@types/jsdom": "^16.2.4",
+    "@types/react": "^16.9.11",
+    "@types/react-dom": "^16.9.8",
+    "alsatian": "^3.1.0",
+    "cross-env": "^7.0.0",
+    "jsdom": "^16.4.0",
+    "neworbit-tslint-config": "^6.0.0",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "tap-xunit": "^2.4.1",
+    "tslint": "^5.20.0",
+    "typescript": "^3.6.4"
+  }
+}
