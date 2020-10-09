@@ -1,4 +1,4 @@
-# alsatian-reacttestinglibrary
+# alsatian-react-testing-library
 
 ## License
 
