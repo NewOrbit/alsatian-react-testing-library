@@ -29,7 +29,7 @@
   "peerDependencies": {
     "alsatian": "3.x",
     "@testing-library/react": "11.x",
-    "jsdom": "^16.4.0"
+    "jsdom": "^16.5.0"
   },
   "devDependencies": {
     "@testing-library/react": "^11.0.4",
@@ -38,7 +38,7 @@
     "@types/react-dom": "^16.9.8",
     "alsatian": "^3.1.0",
     "cross-env": "^7.0.0",
-    "jsdom": "^16.4.0",
+    "jsdom": "^16.5.0",
     "neworbit-tslint-config": "^6.0.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
